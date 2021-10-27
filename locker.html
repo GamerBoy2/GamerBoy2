@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      body {
+        background:black;
+      }
+      .img1{
+        position: relative;
+  top: 0;
+  left: 3%;
+      }
+      
+      .img2{
+         position: absolute;
+  top: 1%;
+  right: 65.5%;
+      }
+      
+      img {
+        border-radius:5%;
+      }
+    </style>
+    <div class="img2"><img src="https://www.jing.fm/clipimg/detail/90-904155_clipart-of-cow-beef-and-cow-of-black.png" height="550px" width="600px"></div>
+    <div class="img1"><img src="https://www.colourbox.com/preview/5446395-cow-cartoon.jpg" height="550px" width="600px" id="img" /></div>
+<p><button class="btn" onclick="remove_img()">Black</button></p>
+<script>
+  function remove_img(){
+   document.getElementById('img').remove();
+}
+</script>
+  </head>
+</html>

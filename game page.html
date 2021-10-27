@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color:white;
+      }
+      img {
+        border-radius:5%;
+      }
+    </style>
+    <iframe width="160" height="10" src="https://www.youtube.com/embed/AcRUGoNVLhs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!--JavaScript - Move Object with Arrow Keys using JavaScript Function.-->
+    <head>
+        <title>Game Page</title>
+        <script type="text/javascript">
+            //init object globally
+            var objImage = null;
+            function init() {
+                objImage = document.getElementById("image1");
+                objImage.style.position = "relative";
+                objImage.style.left = "0px";
+                objImage.style.top = "0px";
+            }
+            function getKeyAndMove(e) {
+                var key_code = e.which || e.keyCode;
+                switch (key_code) {
+                    case 37: //left arrow key
+                        moveLeft();
+                        break;
+                    case 38: //Up arrow key
+                        moveUp();
+                        break;
+                    case 39: //right arrow key
+                        moveRight();
+                        break;
+                    case 40: //down arrow key
+                        moveDown();
+                        break;
+                }
+            }
+            function moveLeft() {
+                objImage.style.left = parseInt(objImage.style.left) - 5 + "px";
+            }
+            function moveUp() {
+                objImage.style.top = parseInt(objImage.style.top) - 5 + "px";
+            }
+            function moveRight() {
+                objImage.style.left = parseInt(objImage.style.left) + 5 + "px";
+            }
+            function moveDown() {
+                objImage.style.top = parseInt(objImage.style.top) + 5 + "px";
+            }
+            window.onload = init;
+        </script>
+    </head>
+
+    <body onkeydown="getKeyAndMove(event)">
+        <img id="image1" src="https://www.colourbox.com/preview/5446395-cow-cartoon.jpg" height="250px" width="300px" />
+    </body>
+     </head>
+    <img src="https://us.123rf.com/450wm/alexutemov/alexutemov1607/alexutemov160700804/60454159-cute-sweet-colorful-donut-chocolate-or-cream-yummy-cookie-donuts-food-candy-decoration-color-donut-c.jpg?ver=6" id="img" />
+    
+    <body>
+    <script>
+    $(document).on('click','#img',function(){
+  $('#img').remove();
+});
+</script>
+</body>
+
+ 
+</html>
